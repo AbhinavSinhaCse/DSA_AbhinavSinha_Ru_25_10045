@@ -6,7 +6,7 @@ public class ContactManager {
 
     HashMap<Integer, Student> contactMap = new HashMap<>();
 
-    // Add student
+    // Adding student
     void addStudent(int roll, String name, String phone) {
 
         if (contactMap.containsKey(roll)) {
@@ -22,14 +22,14 @@ public class ContactManager {
         System.out.println("Student added successfully!");
     }
 
-    // Display all students
+    // displaying all students
     void displayStudents() {
         for (Student s : students) {
             s.display();
         }
     }
 
-    // Search student using HashMap
+    // Searching student using HashMap
     void searchStudent(int roll) {
 
         Student s = contactMap.get(roll);
@@ -41,7 +41,7 @@ public class ContactManager {
         }
     }
 
-    // Delete student
+    // Deleting student
     void deleteStudent(int roll) {
 
         Student s = contactMap.remove(roll);
